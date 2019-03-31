@@ -7,9 +7,9 @@ export default class ColorBox extends Component {
 
     if (opacity >= 0.2) {
       return (
-        <div className="color-box" style={{opacity: opacity}}>
+        <div className="color-box" style={{opacity}}>
           {console.log(opacity)}
-              <ColorBox opacity={opacity - 0.1} />
+          <ColorBox opacity={opacity - 0.1} />
         </div>
       )
     } else {
